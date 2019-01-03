@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg" alt="">
+    <div class="banner">
+      <img @click="handleBannerClick" class="banner-img" src="http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg" alt="">
       <div class="banner-info">
         <div class="banner-title">大连圣亚海洋世界（AAA景区）</div>
         <div class="banner-number"><span class="iconfont">&#xe632;</span>39</div>
@@ -20,11 +20,12 @@ export default {
   },
   methods: {
     handleBannerClick () {
+      console.log('handleBannerClick')
       this.showGallary = true
     },
     handleClose () {
-      this.showGallary = false
       console.log('handleClose')
+      this.showGallary = false
     }
   },
   data () {

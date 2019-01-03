@@ -16,7 +16,7 @@ export default {
   name: 'CommonGallary',
   methods: {
     handleGallaryClick () {
-      console.log('close')
+      console.log('handleGallaryClick')
       this.$emit('close')
     }
   },
